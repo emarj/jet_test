@@ -1,0 +1,18 @@
+CREATE TABLE entity (
+	id INTEGER,
+	name TEXT NOT NULL,
+	PRIMARY KEY(id)
+);
+CREATE TABLE account (
+	id INTEGER,
+	name TEXT NOT NULL,
+	owner_id INTEGER NOT NULL,
+	PRIMARY KEY(id)
+);
+CREATE TABLE operation (
+	id INTEGER,
+	from_id INTEGER NOT NULL,
+	to_id INTEGER NOT NULL,
+	amount INTEGER NOT NULL,
+	PRIMARY KEY(id)
+);
